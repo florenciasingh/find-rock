@@ -8,12 +8,8 @@ class ArtistCard extends React.Component {
     return (
       <div className="col-3">
         <div className="item">
-          <img
-            src="https://junglove.net/wp-content/uploads/2017/09/p05905ln.jpg"
-            alt="lana"
-            className="pic"
-          />
-          <p className="title">Lana del Rey</p>
+          <img src={this.props.img} className="pic" alt="infoartist" />
+          <p className="title">{this.props.title}</p>
         </div>
       </div>
     );

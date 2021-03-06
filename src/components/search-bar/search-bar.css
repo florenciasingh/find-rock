@@ -1,0 +1,58 @@
+.row-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.col-md-6 {
+  margin-top: 1rem;
+}
+
+.busqueda {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 28px;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.busqueda :hover {
+  -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+          box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+  border-radius: 28px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  width: 100%;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.logoRock {
+  max-width: 90%;
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=search-bar.css.map */
