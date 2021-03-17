@@ -33,9 +33,9 @@ class SearchBar extends React.Component {
                   id="search"
                   name="Input"
                   type="search"
-                  value={this.state.busqueda}
+                  //value={this.state.busqueda}
                   placeholder="Search a band"
-                  onChange={this.handleChange}
+                  onChange={this.props.onChange}
                 />
               </div>
             </form>
