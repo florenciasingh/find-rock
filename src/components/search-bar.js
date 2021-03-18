@@ -1,6 +1,7 @@
 import React from "react";
 import "./search-bar/search-bar.css";
-import Logo from "./logo-rock.svg";
+import logo from "./logo-rock.svg";
+import { Link } from "react-router-dom";
 class SearchBar extends React.Component {
   state = {
     busqueda: "",
@@ -20,7 +21,9 @@ class SearchBar extends React.Component {
       <React.Fragment>
         <div className="row-header">
           <div className="col-md-2">
-            <img className="logoRock" src={Logo} alt="" />
+            <Link to="/">
+              <img className="logoRock" src={logo} alt="" />
+            </Link>
           </div>
           <div className="col-md-6">
             <form

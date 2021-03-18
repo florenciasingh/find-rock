@@ -2,7 +2,6 @@ import { render } from "@testing-library/react";
 import React from "react";
 import "./page-home.css";
 import logo from "./logo-rock.svg";
-import ReactDOM from "react-dom";
 
 class PageHome extends React.Component {
   render() {
@@ -13,8 +12,9 @@ class PageHome extends React.Component {
             <img src={logo} alt="" id="logo" />
             <form
               name="InputForm"
-              className="d-flex"
+              className="form-inline"
               onSubmit={this.handleSubmit}
+              name="form"
             >
               <div className="busqueda">
                 <input
@@ -28,7 +28,7 @@ class PageHome extends React.Component {
               </div>
               <div className="actions">
                 <button className="btng" type="submit">
-                  Search Similar Artist
+                  Search Similar Artists
                 </button>
                 <button className="btng" onClick={this.handleClick}>
                   EscuelaDevRock

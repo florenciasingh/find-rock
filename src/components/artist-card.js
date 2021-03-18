@@ -9,6 +9,7 @@ class ArtistCard extends React.Component {
       <div className="col-3">
         <div className="item">
           <img src={this.props.img} className="pic" alt="infoartist" />
+
           <p className="title">{this.props.title}</p>
         </div>
       </div>
