@@ -1,6 +1,5 @@
 import React from "react";
 import ArtistCard from "./artist-card.js";
-
 class SimilarArtist extends React.Component {
   render() {
     return (
@@ -16,8 +15,8 @@ class SimilarArtist extends React.Component {
           {this.props.data.slice(0, 4).map((item, i) => {
             return (
               <ArtistCard
-                pic={item.image[3]["#text"]}
-                title={item.name}
+                img={item.image[3]["#text"]}
+                titulo={item.name}
                 key={i}
               />
             );

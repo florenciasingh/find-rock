@@ -5,6 +5,7 @@ import PageArtist from "./page-artist.js";
 import PageHome from "./page-home.js";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./layout.js";
+
 class App extends Component {
   render() {
     return (

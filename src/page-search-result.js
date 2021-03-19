@@ -4,9 +4,12 @@ import SearchBar from "./components/search-bar.js";
 import SearchResult from "./components/search-result.js";
 
 class PageSearchResult extends Component {
-  state = {
-    busqueda: "",
-  };
+  constructor(props) {
+    super(props);
+    // No llamar this.setState() aca!
+    this.state = { busqueda: "" };
+    ///console.log("Constructor - Antes del render");
+  }
   componentDidMount() {
     let search = this.props.history.location.search
       .substr(1)
@@ -19,17 +22,20 @@ class PageSearchResult extends Component {
   componentWillMount() {}
   componentWillUnmount() {}
 
-  changeHandle = (e) => {
+  handleChange = (e) => {
     this.setState({
-      [e.target.name]: e.target.value,
+      busqueda: e.target.value,
     });
   };
 
   render() {
     return (
       <React.Fragment>
-        <SearchBar onChange={this.changeHandle} />
-        <SearchResult />
+        <SearchBar
+          onChange={this.handleChange}
+          busqueda={this.state.busqueda}
+        />
+        <SearchResult busqueda={this.state.busqueda} />
       </React.Fragment>
     );
   }
