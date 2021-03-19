@@ -1,6 +1,8 @@
 import React from "react";
 import "./page-home.css";
 import logo from "./logo-rock.svg";
+import ReactDOM from "react-dom";
+import Modal from "./components/modal.js";
 
 class PageHome extends React.Component {
   handleSubmit = (e) => {
@@ -58,6 +60,12 @@ class PageHome extends React.Component {
             </form>
           </div>
         </div>
+        {ReactDOM.createPortal(
+          <Modal estado={this.state.modal}>
+            <h4>Soy qeda desde un modal</h4>
+          </Modal>,
+          document.getElementById("teleport")
+        )}
       </div>
     );
   }
